@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chintan | AI Engineer & Data Scientist</title>
+    <meta
+      name="description"
+      content="AI Engineer & Data Scientist building scalable AI systems, inference engines, and explainable AI platforms."
+    />
+
+    <!-- Tailwind Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              indigo: { 500: "#6366F1", 600: "#4F46E5" },
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border-width: 0;
+      }
+      @keyframes caret-blink {
+        0%, 49% { border-color: currentColor; }
+        50%, 100% { border-color: transparent; }
+      }
+      .typing { border-right: 2px solid currentColor; animation: caret-blink 1s step-end infinite; }
+    </style>
+  </head>
+
+  <body
+    class="bg-gradient-to-b from-neutral-950 via-neutral-900 to-neutral-950 text-neutral-100"
+  >
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-indigo-600 text-white px-3 py-1 rounded">Skip to content</a>
+
+    <!-- Header -->
+    <header
+      class="sticky top-0 z-50 backdrop-blur bg-neutral-950/70 border-b border-neutral-800 shadow-md"
+    >
+      <div class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+        <h1 class="text-2xl font-extrabold tracking-wide text-white">
+          chintan<span class="text-indigo-500">.space</span>
+        </h1>
+        <nav aria-label="Primary" class="hidden md:flex gap-8 text-neutral-400 font-medium">
+          <a href="#about" class="hover:text-white transition-colors">About</a>
+          <a href="#skills" class="hover:text-white transition-colors">Skills</a>
+          <a href="#career" class="hover:text-white transition-colors">Career</a>
+          <a href="#research" class="hover:text-white transition-colors">Research</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main id="main" class="max-w-6xl mx-auto px-6 py-16 md:py-24 space-y-24">
+      <!-- Hero -->
+      <section
+        id="about"
+        class="grid md:grid-cols-[1.1fr,0.9fr] gap-10 items-center"
+      >
+        <div class="space-y-6">
+          <h2 class="text-5xl md:text-6xl font-extrabold leading-tight">
+            Hi, I'm <span id="hero-name" class="text-indigo-400">Chintan Chitroda</span>
+          </h2>
+          <p class="text-neutral-400 text-lg leading-relaxed">
+            Lead Data Scientist & Full Stack Engineer. I design, develop, optimize, and deploy
+            scalable AI systems across data science, backend, and infrastructure.
+            I also collaborate with R&amp;D labs on explainable AI, model
+            optimization, and foundational tabular models.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a
+              href="#skills"
+              class="inline-flex items-center justify-center rounded-xl px-4 py-2 bg-indigo-600 text-white font-medium hover:bg-indigo-500 transition-colors"
+            >View My Work &rarr;</a>
+            <div class="flex items-center gap-3">
+              <a
+                href="https://www.linkedin.com/in/chintanchitroda"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="LinkedIn"
+                aria-label="LinkedIn"
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full border border-neutral-700 text-neutral-300 hover:text-white hover:border-indigo-500 hover:bg-neutral-800 transition"
+              >
+                <span class="text-sm font-semibold">in</span>
+              </a>
+              <a
+                href="https://github.com/Chintan99"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="GitHub"
+                aria-label="GitHub"
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full border border-neutral-700 text-neutral-300 hover:text-white hover:border-indigo-500 hover:bg-neutral-800 transition"
+              >
+                <span class="text-sm font-semibold">GH</span>
+              </a>
+              <a
+                href="https://wa.link/npjjkk"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="WhatsApp"
+                aria-label="WhatsApp"
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full border border-neutral-700 text-neutral-300 hover:text-white hover:border-indigo-500 hover:bg-neutral-800 transition"
+              >
+                <span class="text-sm font-semibold">WA</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="justify-self-center md:justify-self-end">
+          <div
+            class="rounded-2xl overflow-hidden border border-neutral-800 shadow-2xl hover:scale-[1.02] transition-transform duration-500"
+          >
+            <img
+              src="./chintan-profile.png"
+              alt="Chintan portrait"
+              width="360"
+              height="360"
+              class="object-cover"
+              loading="eager"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills">
+        <h3
+          class="text-3xl font-semibold mb-8 border-b border-neutral-800 pb-3"
+        >
+          Technical Expertise
+        </h3>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-center"
+        >
+          <div
+            class="bg-neutral-900/80 border border-neutral-800 rounded-2xl shadow-lg p-5 hover:border-indigo-500 hover:shadow-indigo-500/20 transition-all"
+          >
+            Python &bull; FastAPI &bull; Celery &bull; Docker &bull; K8s
+          </div>
+          <div
+            class="bg-neutral-900/80 border border-neutral-800 rounded-2xl shadow-lg p-5 hover:border-indigo-500 hover:shadow-indigo-500/20 transition-all"
+          >
+            Transformers &bull; vLLM &bull; NeMo Guardrails &bull; Scalable Inference Engine
+          </div>
+          <div
+            class="bg-neutral-900/80 border border-neutral-800 rounded-2xl shadow-lg p-5 hover:border-indigo-500 hover:shadow-indigo-500/20 transition-all"
+          >
+            CUDA &bull; FP16/FP8 &bull; Quantization &bull; Model Optimization
+          </div>
+          <div
+            class="bg-neutral-900/80 border border-neutral-800 rounded-2xl shadow-lg p-5 hover:border-indigo-500 hover:shadow-indigo-500/20 transition-all"
+          >
+            AWS &bull; EC2 &bull; NFSv4 + Kerberos &bull; S3/MinIO &bull; Secure Cloud Deployment
+          </div>
+          <div
+            class="bg-neutral-900/80 border border-neutral-800 rounded-2xl shadow-lg p-5 hover:border-indigo-500 hover:shadow-indigo-500/20 transition-all"
+          >
+            DevOps &bull; CI/CD &bull; CSP Hardening &bull; Infrastructure Optimization
+          </div>
+          <div
+            class="bg-neutral-900/80 border border-neutral-800 rounded-2xl shadow-lg p-5 hover:border-indigo-500 hover:shadow-indigo-500/20 transition-all"
+          >
+            Client Engagement &amp; Projects &bull; Onsite Deployment &bull; Explainable AI
+          </div>
+        </div>
+      </section>
+
+      <!-- Career -->
+      <section id="career">
+        <h3
+          class="text-3xl font-semibold mb-8 border-b border-neutral-800 pb-3"
+        >
+          Career & Experience
+        </h3>
+
+        <!-- Leadership -->
+        <div class="grid md:grid-cols-2 gap-6 mb-6">
+          <div
+            class="bg-neutral-900/80 border border-neutral-800 rounded-2xl shadow-lg p-5 hover:border-indigo-500/50 transition-all"
+          >
+            <h4 class="text-xl font-semibold mb-2 text-white">Leadership</h4>
+            <p class="text-neutral-400 leading-relaxed">
+              4+ years driving AI initiatives end-to-end &mdash; from architecture to
+              deployment &mdash; leading data science teams and managing enterprise-level
+              AI projects across finance, insurance, and cloud systems.
+            </p>
+          </div>
+
+          <div
+            class="bg-neutral-900/80 border border-neutral-800 rounded-2xl shadow-lg p-5 hover:border-indigo-500/50 transition-all"
+          >
+            <h4 class="text-xl font-semibold mb-2 text-white">Systems & Infra</h4>
+            <p class="text-neutral-400 leading-relaxed">
+              Architected and deployed scalable inference engines, secure cloud
+              infrastructures, and high-performance compute environments for hybrid
+              on-prem + AWS setups with GPU orchestration.
+            </p>
+          </div>
+        </div>
+
+        <!-- Product Building -->
+        <div
+          class="bg-neutral-900/80 border border-neutral-800 rounded-2xl shadow-lg p-6 hover:border-indigo-500/50 transition-all"
+        >
+          <h4 class="text-2xl font-semibold mb-3 text-indigo-400">
+            Product Building: AryaXAI Platform
+          </h4>
+          <p class="text-neutral-400 leading-relaxed">
+            Built <span class="text-white font-semibold">AryaXAI</span> from scratch &mdash; an
+            explainability and observability platform for AI/ML and intelligent
+            agents. Designed for scalability, modularity, and compliance, it
+            integrates LLM explainability, pipeline monitoring, and fine-grained
+            model governance. The platform supports multi-server orchestration,
+            automated insight tracking, and hybrid deployments across secure cloud
+            and on-prem GPU environments.
+          </p>
+        </div>
+      </section>
+
+      <!-- Research -->
+      <section id="research">
+        <h3
+          class="text-3xl font-semibold mb-8 border-b border-neutral-800 pb-3"
+        >
+          Research & Development
+        </h3>
+        <div class="space-y-8">
+          <div
+            class="bg-neutral-900/80 border border-neutral-800 rounded-2xl shadow-lg p-6 hover:border-indigo-500/50 transition-all"
+          >
+            <h4 class="text-2xl font-semibold mb-3 text-indigo-400">
+              AryaXAI R&amp;D Labs
+            </h4>
+            <p class="text-neutral-400 leading-relaxed">
+              Managing and contributing to <span class="text-white font-semibold">AryaXAI
+              R&amp;D Labs</span> &mdash; focused on explainable AI, model optimization, and
+              foundation model interpretability. Key contributions include
+              developing and maintaining the
+              <span class="text-white font-semibold">DLBacktrace</span> and <span class="text-white font-semibold">AlignTune</span> libraries &mdash; an
+              AI model explainability, fine-tuning, and alignment framework for adaptive multi-domain
+              models, integrating observability, explainability, and performance
+              tuning capabilities.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-6">
+            <div
+              class="bg-neutral-900/80 border border-neutral-800 rounded-2xl shadow-lg p-5 hover:border-indigo-500/50 transition-all"
+            >
+              <h4 class="text-xl font-semibold mb-2 text-white">
+                Explainable AI for Credit Risk
+              </h4>
+              <p class="text-neutral-400 text-sm leading-relaxed">
+                Interpretability and fairness in large-scale tabular models.
+              </p>
+            </div>
+            <div
+              class="bg-neutral-900/80 border border-neutral-800 rounded-2xl shadow-lg p-5 hover:border-indigo-500/50 transition-all"
+            >
+              <h4 class="text-xl font-semibold mb-2 text-white">
+                Optimizing LLMs for Deployment
+              </h4>
+              <p class="text-neutral-400 text-sm leading-relaxed">
+                CUDA, quantization, and runtime efficiency for real-time inference.
+              </p>
+            </div>
+            <div
+              class="bg-neutral-900/80 border border-neutral-800 rounded-2xl shadow-lg p-5 hover:border-indigo-500/50 transition-all"
+            >
+              <h4 class="text-xl font-semibold mb-2 text-white">
+                Foundational Tabular Models
+              </h4>a
+              <p class="text-neutral-400 text-sm leading-relaxed">
+                Base architectures for enterprise-grade structured data systems.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="text-center py-10 mt-24 border-t border-neutral-800 text-neutral-500"
+    >
+      <!-- <p>&copy; 2025 Chintan &bull; Built with &hearts; using HTML &amp; TailwindCSS</p> -->
+      <div class="flex justify-center gap-6 mt-4">
+        <a
+          href="https://github.com/Chintan99"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:text-indigo-400 transition"
+        >GitHub</a>
+        <a
+          href="https://www.linkedin.com/in/chintanchitroda"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:text-indigo-400 transition"
+        >LinkedIn</a>
+        <a
+          href="https://wa.link/npjjkk"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:text-indigo-400 transition"
+        >WhatsApp</a>
+      </div>
+    </footer>
+  </body>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const el = document.getElementById('hero-name');
+      if (!el) return;
+      const full = el.textContent;
+      el.textContent = '';
+      el.classList.add('typing');
+      let i = 0;
+      const speed = 50;
+      const tick = () => {
+        if (i <= full.length) {
+          el.textContent = full.slice(0, i);
+          i++;
+          setTimeout(tick, speed);
+        } else {
+          el.classList.remove('typing');
+        }
+      };
+      tick();
+    });
+  </script>
+</html>
